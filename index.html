@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Paradise - Toko Kue Multibahasa</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <i class="fas fa-birthday-cake"></i>
+                <span class="language-id active">Rasa Bahagia</span>
+                <span class="language-en">feeling of happiness</span>
+                <span class="language-nl">gevoel van geluk</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="nav-link" data-id="beranda" data-en="home" data-nl="home">Beranda</a></li>
+                    <li><a href="#products" class="nav-link" data-id="produk" data-en="products" data-nl="producten">Produk</a></li>
+                    <li><a href="#cart" class="nav-link" data-id="keranjang" data-en="cart" data-nl="winkelwagen">Keranjang</a></li>
+                    <li><a href="#reviews" class="nav-link" data-id="ulasan" data-en="reviews" data-nl="beoordelingen">Ulasan</a></li>
+                    <li><a href="#order" class="nav-link" data-id="pesan" data-en="order" data-nl="bestellen">Pesan</a></li>
+                </ul>
+            </nav>
+            <div class="language-selector">
+                <select id="language-select">
+                    <option value="id">🇮🇩 Indonesia</option>
+                    <option value="en">🇬🇧 English</option>
+                    <option value="nl">🇳🇱 Nederlands</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1 class="language-id active">Kue Lezat untuk Setiap Momen</h1>
+            <h1 class="language-en">Delicious Cakes for Every Occasion</h1>
+            <h1 class="language-nl">Heerlijke Taarten voor Elke Gelegenheid</h1>
+            
+            <p class="language-id active">Temukan berbagai macam kue lezat dengan desain kreatif dan rasa yang tak terlupakan. Pesan sekarang dan nikmati kelezatan kami!</p>
+            <p class="language-en">Discover a variety of delicious cakes with creative designs and unforgettable flavors. Order now and enjoy our delicacies!</p>
+            <p class="language-nl">Ontdek een verscheidenheid aan heerlijke taarten met creatieve ontwerpen en onvergetelijke smaken. Bestel nu en geniet van onze lekkernijen!</p>
+            
+            <a href="#products" class="cta-button nav-link" data-id="lihat produk" data-en="view products" data-nl="bekijk producten">Lihat Produk</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title language-id active">Produk Kami</h2>
+            <h2 class="section-title language-en">Our Products</h2>
+            <h2 class="section-title language-nl">Onze Producten</h2>
+            
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Strawberry Cake" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name language-id active">Kue Strawberry</h3>
+                        <h3 class="product-name language-en">Strawberry Cake</h3>
+                        <h3 class="product-name language-nl">Aardbeien Taart</h3>
+                        <p class="product-price">Rp 30.000</p>
+                        <button class="add-to-cart" data-id="1" data-name-id="Kue Strawberry" data-name-en="Strawberry Cake" data-name-nl="Aardbeien Taart" data-price="30000">
+                            <span class="language-id active">Tambah ke Keranjang</span>
+                            <span class="language-en">Add to Cart</span>
+                            <span class="language-nl">Toevoegen aan Winkelwagen</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <img src="https://cdn.idntimes.com/content-images/post/20221213/besteverdeathbychocolatecakerecipelowcarbketohorizontal-b5ad3f06af79396ef60d48bd259c32a4.jpg" alt="Chocolate Cake" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name language-id active">Kue Cokelat</h3>
+                        <h3 class="product-name language-en">Chocolate Cake</h3>
+                        <h3 class="product-name language-nl">Chocolade Taart</h3>
+                        <p class="product-price">Rp 150.000</p>
+                        <button class="add-to-cart" data-id="2" data-name-id="Kue Cokelat" data-name-en="Chocolate Cake" data-name-nl="Chocolade Taart" data-price="150000">
+                            <span class="language-id active">Tambah ke Keranjang</span>
+                            <span class="language-en">Add to Cart</span>
+                            <span class="language-nl">Toevoegen aan Winkelwagen</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <img src="https://food-images.files.bbci.co.uk/food/recipes/rainbow_cake_20402_16x9.jpg" alt="Rainbow Cake" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name language-id active">Kue Pelangi</h3>
+                        <h3 class="product-name language-en">Rainbow Cake</h3>
+                        <h3 class="product-name language-nl">Regenboog Taart</h3>
+                        <p class="product-price">Rp 180.000</p>
+                        <button class="add-to-cart" data-id="3" data-name-id="Kue Pelangi" data-name-en="Rainbow Cake" data-name-nl="Regenboog Taart" data-price="180000">
+                            <span class="language-id active">Tambah ke Keranjang</span>
+                            <span class="language-en">Add to Cart</span>
+                            <span class="language-nl">Toevoegen aan Winkelwagen</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1586788680434-30d324b2d46f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Vanilla Cake" class="product-image">
+                    <div class="product-info">
+                        <h3 class="product-name language-id active">Kue Vanilla</h3>
+                        <h3 class="product-name language-en">Vanilla Cake</h3>
+                        <h3 class="product-name language-nl">Vanille Taart</h3>
+                        <p class="product-price">Rp 45.000</p>
+                        <button class="add-to-cart" data-id="4" data-name-id="Kue Vanilla" data-name-en="Vanilla Cake" data-name-nl="Vanille Taart" data-price="45000">
+                            <span class="language-id active">Tambah ke Keranjang</span>
+                            <span class="language-en">Add to Cart</span>
+                            <span class="language-nl">Toevoegen aan Winkelwagen</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Section -->
+    <section id="cart" class="cart">
+        <div class="container">
+            <h2 class="section-title language-id active">Keranjang Belanja</h2>
+            <h2 class="section-title language-en">Shopping Cart</h2>
+            <h2 class="section-title language-nl">Winkelwagen</h2>
+            
+            <div class="cart-container">
+                <div class="cart-items" id="cart-items">
+                    <!-- Cart items will be dynamically added here -->
+                    <div class="empty-cart" id="empty-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h3 class="language-id active">Keranjang Anda Kosong</h3>
+                        <h3 class="language-en">Your Cart is Empty</h3>
+                        <h3 class="language-nl">Uw Winkelwagen is Leeg</h3>
+                        <p class="language-id active">Tambahkan beberapa kue lezat ke keranjang Anda!</p>
+                        <p class="language-en">Add some delicious cakes to your cart!</p>
+                        <p class="language-nl">Voeg enkele heerlijke taarten toe aan uw winkelwagen!</p>
+                    </div>
+                </div>
+                
+                <div class="cart-total language-id active">Total: Rp <span id="cart-total">0</span></div>
+                <div class="cart-total language-en">Total: $ <span id="cart-total-en">0</span></div>
+                <div class="cart-total language-nl">Totaal: € <span id="cart-total-nl">0</span></div>
+                
+                <button class="checkout-button" id="checkout-button">
+                    <span class="language-id active">Lanjutkan ke Pembayaran</span>
+                    <span class="language-en">Proceed to Checkout</span>
+                    <span class="language-nl">Doorgaan naar Afrekenen</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2 class="section-title language-id active">Ulasan Pembeli</h2>
+            <h2 class="section-title language-en">Customer Reviews</h2>
+            <h2 class="section-title language-nl">Klantbeoordelingen</h2>
+            
+            <div class="reviews-grid">
+                <!-- Review 1 -->
+                <div class="review-card">
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <div class="reviewer-name">Sari Wijaya</div>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="language-id active">Kuenya lezat sekali! Pelayanan juga cepat. Anak saya sangat suka dengan kue strawberry untuk ulang tahunnya.</p>
+                    <p class="language-en">The cake was delicious! The service was also fast. My child really liked the strawberry cake for his birthday.</p>
+                    <p class="language-nl">De taart was heerlijk! De service was ook snel. Mijn kind hield echt van de aardbeientaart voor zijn verjaardag.</p>
+                </div>
+                
+                <!-- Review 2 -->
+                <div class="review-card">
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <div class="reviewer-name">David Johnson</div>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="language-id active">Kue cokelatnya sangat kaya rasa. Teksturnya lembut dan tidak terlalu manis. Akan pesan lagi!</p>
+                    <p class="language-en">The chocolate cake was very rich in flavor. The texture was soft and not too sweet. Will order again!</p>
+                    <p class="language-nl">De chocoladetaart was zeer rijk van smaak. De textuur was zacht en niet te zoet. Zal opnieuw bestellen!</p>
+                </div>
+                
+                <!-- Review 3 -->
+                <div class="review-card">
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <div class="reviewer-name">Emma van Dijk</div>
+                            <div class="review-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="language-id active">Kue pelanginya sangat indah dan rasanya luar biasa. Semua tamu di pesta pernikahan saya memujinya.</p>
+                    <p class="language-en">The rainbow cake was very beautiful and tasted amazing. All the guests at my wedding praised it.</p>
+                    <p class="language-nl">De regenboogtaart was erg mooi en smaakte geweldig. Alle gasten op mijn bruiloft prezen het.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Order Form Section -->
+    <section id="order" class="order-form-section">
+        <div class="container">
+            <h2 class="section-title language-id active">Formulir Pemesanan</h2>
+            <h2 class="section-title language-en">Order Form</h2>
+            <h2 class="section-title language-nl">Bestelformulier</h2>
+            
+            <form class="order-form" id="order-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name" class="language-id active">Nama Lengkap</label>
+                        <label for="name" class="language-en">Full Name</label>
+                        <label for="name" class="language-nl">Volledige Naam</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="language-id active">Email</label>
+                        <label for="email" class="language-en">Email</label>
+                        <label for="email" class="language-nl">E-mail</label>
+                        <input type="email" id="email" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone" class="language-id active">Nomor Telepon</label>
+                        <label for="phone" class="language-en">Phone Number</label>
+                        <label for="phone" class="language-nl">Telefoonnummer</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="delivery-date" class="language-id active">Tanggal Pengiriman</label>
+                        <label for="delivery-date" class="language-en">Delivery Date</label>
+                        <label for="delivery-date" class="language-nl">Bezorgdatum</label>
+                        <input type="date" id="delivery-date" required>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="address" class="language-id active">Alamat Lengkap</label>
+                    <label for="address" class="language-en">Full Address</label>
+                    <label for="address" class="language-nl">Volledig Adres</label>
+                    <textarea id="address" rows="3" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="notes" class="language-id active">Catatan Tambahan</label>
+                    <label for="notes" class="language-en">Additional Notes</label>
+                    <label for="notes" class="language-nl">Aanvullende Opmerkingen</label>
+                    <textarea id="notes" rows="3" placeholder="Contoh: Tambahkan pesan ucapan di kue"></textarea>
+                </div>
+                
+                <button type="submit" class="submit-button">
+                    <span class="language-id active">Kirim Pesanan</span>
+                    <span class="language-en">Submit Order</span>
+                    <span class="language-nl">Bestelling Verzenden</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3 class="language-id active">Cake Paradise</h3>
+                    <h3 class="language-en">Cake Paradise</h3>
+                    <h3 class="language-nl">Taart Paradijs</h3>
+                    <p class="language-id active">Menyediakan kue lezat untuk setiap momen spesial Anda sejak 2010.</p>
+                    <p class="language-en">Providing delicious cakes for your every special moment since 2010.</p>
+                    <p class="language-nl">Sinds 2010 heerlijke taarten voor al uw speciale momenten.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="language-id active">Kontak Kami</h3>
+                    <h3 class="language-en">Contact Us</h3>
+                    <h3 class="language-nl">Contacteer Ons</h3>
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i> Jl. Kue Lezat No. 123, Jakarta</li>
+                        <li><i class="fas fa-phone"></i> +62 21 1234 5678</li>
+                        <li><i class="fas fa-envelope"></i> info@cakeparadise.com</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3 class="language-id active">Tautan Cepat</h3>
+                    <h3 class="language-en">Quick Links</h3>
+                    <h3 class="language-nl">Snelle Links</h3>
+                    <ul>
+                        <li><a href="#home" class="nav-link" data-id="beranda" data-en="home" data-nl="home">Beranda</a></li>
+                        <li><a href="#products" class="nav-link" data-id="produk" data-en="products" data-nl="producten">Produk</a></li>
+                        <li><a href="#cart" class="nav-link" data-id="keranjang" data-en="cart" data-nl="winkelwagen">Keranjang</a></li>
+                        <li><a href="#order" class="nav-link" data-id="pesan" data-en="order" data-nl="bestellen">Pesan</a></li>
+                    </ul>
+                </div>
+            </div>s
+            
+            <div class="copyright">
+                <p class="language-id active">&copy; 2023 Cake Paradise. Semua hak dilindungi.</p>
+                <p class="language-en">&copy; 2023 Cake Paradise. All rights reserved.</p>
+                <p class="language-nl">&copy; 2023 Taart Paradijs. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
